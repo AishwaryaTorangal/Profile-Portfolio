@@ -1,0 +1,196 @@
+/* Import Roboto Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* Root Variables for Colors */
+:root {
+    --primary-color: #008DDA;  /* Dark Blue */
+    --secondary-color: #41c9e2; /* Light Blue */
+    --accent-color: #ACE2E1;    /* Soft Aqua */
+    --background-color: #DFF5FF; /* Light Cream */
+    --text-color: #333;        /* Dark Text */
+    --white: #fff;
+    --border-radius: 10px;
+}
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+header {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: var(--border-radius);
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 1.5rem;
+}
+
+nav ul li a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--secondary-color);
+}
+
+/* Main Content Styling */
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Section Styles */
+section {
+    background-color: var(--white);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+/* About Section */
+#about img {
+    border-radius: 50%;
+    margin-top: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Skills List */
+#skills ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+/* Projects */
+#projects article {
+    margin-bottom: 2rem;
+}
+
+#projects article h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+#projects article a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+#projects article a:hover {
+    color: var(--secondary-color);
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+form label {
+    font-weight: 500;
+}
+
+form input, form textarea {
+    padding: 0.8rem;
+    border: 1px solid var(--accent-color);
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+}
+
+form button {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    padding: 0.8rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: var(--border-radius);
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border-radius: var(--border-radius);
+    margin-top: 2rem;
+}
+
+footer a {
+    color: var(--white);
+    margin-left: 0.5rem;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+footer a:hover {
+    color: var(--secondary-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 1rem;
+    }
+
+    #about img {
+        width: 150px;
+    }
+
+    section {
+        padding: 1.5rem;
+    }
+}
