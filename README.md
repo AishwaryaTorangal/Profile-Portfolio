@@ -17,9 +17,9 @@ This is a personal portfolio website showcasing my skills, projects, and experie
 - Google Fonts (Roboto)
   
 ## File Structure
-├── index.html
-├── style.css
-└── assets/
+├── index.html<BR>
+├── style.css<BR>
+└── assets/<BR>
     └── images/
 ## Responsive Design
 The website uses media queries for mobile, tablet, and desktop layouts.
